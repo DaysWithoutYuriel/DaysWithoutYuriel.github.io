@@ -15,7 +15,7 @@
 
 <xhtml:script>
 	function getDate () {
-		var date1 = new Date(2024,3,14);
+		var date1 = new Date(2024,2,14);
 		var date2 = new Date();
 
 		var Difference_In_Time = date2.getTime() - date1.getTime();
@@ -24,12 +24,7 @@
 
 		x = document.getElementsByClassName("x")[0x0];
 
-		if (Difference_In_Days == -30 || Difference_In_Days == -31) {
-			x.innerHTML = "Come back on 3/14 for Day 0...";
-		} else {
-			x.innerHTML = Difference_In_Days;
-		}
-		console.log(Difference_In_Days);
+		x.innerHTML = Difference_In_Days;
 	}
 </xhtml:script>
 </xhtml:html>
