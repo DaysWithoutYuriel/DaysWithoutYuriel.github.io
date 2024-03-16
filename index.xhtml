@@ -8,11 +8,10 @@
 <xhtml:body onload="getDate()" style="background-color: #e0e0e0">
 	<xhtml:center>
 		<xhtml:h1 style="font-family: Brush Script MT, Brush Script Std, cursive; font-size: 250%; letter-spacing: 3px; margin-top: 50px; color: #1c1c1c">Days Without Yuriel<xhtml:br></xhtml:br>🕊️🕊️🕊️</xhtml:h1>
+		<xhtml:h3 style="font-family: New Century Schoolbook, TeX Gyre Schola, serif; margin-top: 0px; font-size: 150%; color: #1c1c1c">xxxxxxxxxx</xhtml:h3>
 		<xhtml:h1 class="x" style="font-family: New Century Schoolbook, TeX Gyre Schola, serif; margin-top: -20px; font-size: 500%; color: #1c1c1c">X</xhtml:h1>
-		<xhtml:h3 style="font-family: New Century Schoolbook, TeX Gyre Schola, serif; margin-top: -50px; font-size: 150%; color: #1c1c1c">xxxxxxxxxx</xhtml:h3>
-		<xhtml:h3 class="xx" style="font-family: New Century Schoolbook, TeX Gyre Schola, serif; margin-top: -10px; font-size: 150%; color: #1c1c1c">X</xhtml:h3>
-		<xhtml:h3 class="xxx" style="font-family: New Century Schoolbook, TeX Gyre Schola, serif; margin-top: -10px; font-size: 150%; color: #1c1c1c">X</xhtml:h3>
-		<xhtml:h3 style="font-family: New Century Schoolbook, TeX Gyre Schola, serif; margin-top: -10px; font-size: 150%; color: #1c1c1c">xxxxxxxxxx</xhtml:h3>
+		<xhtml:h3 class="xx" style="font-family: New Century Schoolbook, TeX Gyre Schola, serif; margin-top: -50px; font-size: 150%; color: #1c1c1c">X</xhtml:h3>
+		<xhtml:h3 class="xxx" style="font-family: New Century Schoolbook, TeX Gyre Schola, serif; margin-top: -10px; font-size: 150%; color: #1c1c1c">xxxxxxxxxx</xhtml:h3>
 		<xhtml:img src="Yuriel.jpg" width="50%" height="50%">I still his shadows in my room 😞😞😞</xhtml:img>
 	</xhtml:center>
 </xhtml:body>
@@ -23,38 +22,15 @@
 	function getDate () {
 		var date1 = new Date(2024, 2, 14);
 		var date2 = new Date();
-		var output = "X";
 		var outputx = "X";
 
 		var absoluteDaysWithoutYuriel = Math.floor((date2.getTime() - date1.getTime()) / 86400000);
 		var secondsWithoutYuriel = date2.getSeconds() - date1.getSeconds();
 		var minutesWithoutYuriel = date2.getMinutes() - date1.getMinutes();
 		var hoursWithoutYuriel = date2.getHours() - date1.getHours();
-		var daysWithoutYuriel = date2.getDate() - date1.getDate();
-		var monthsWithoutYuriel = date2.getMonth() - date1.getMonth();
-		var yearsWithoutYuriel = date2.getFullYear() - date1.getFullYear();
 
 		x = document.getElementsByClassName("x")[0x0];
 		xx = document.getElementsByClassName("xx")[0x0];
-		xxx = document.getElementsByClassName("xxx")[0x0];
-
-		if (yearsWithoutYuriel == 1) {
-			output = "1 year, ";
-		} else {
-			output = yearsWithoutYuriel + " years, ";
-		}
-
-		if (monthsWithoutYuriel == 1) {
-			output = output + " 1 month, and ";
-		} else {
-			output = output + monthsWithoutYuriel + " months, ";
-		}
-
-		if (daysWithoutYuriel == 1) {
-			output = output + " 1 day, ";
-		} else {
-			output = output + daysWithoutYuriel + " days, ";
-		}
 
 		if (hoursWithoutYuriel == 1) {
 			outputx = "1 hour, ";
@@ -74,12 +50,8 @@
 			outputx = outputx + secondsWithoutYuriel + " seconds";
 		}
 
-		x.innerHTML = absoluteDaysWithoutYuriel;
-		xx.innerHTML = output;
-		xxx.innerHTML = outputx;
+		x.innerHTML = absoluteDaysWithoutYuriel + " days";
+		xx.innerHTML = outputx;
 	}
-
-	// [X] Email: gonzalesyuriel07@gmail.com
-	// [X] Passsword: gonzalesyuriel07!edtghju135436-=\;
 </xhtml:script>
 </xhtml:html>
