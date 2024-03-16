@@ -28,10 +28,10 @@
 		var outputx = "X";
 
 		var absoluteDaysWithoutYuriel = Math.floor((date2.getTime() - date1.getTime()) / 86400000);
-		var secondsWithoutYuriel = (Math.floor((date2.getTime() - date1.getTime()) / 1000) % 60);
-		var minutesWithoutYuriel = (Math.floor((date2.getTime() - date1.getTime()) / 60000) % 60);
-		var hoursWithoutYuriel = (Math.floor((date2.getTime() - date1.getTime()) / 3600000) % 24);
-		var daysWithoutYuriel = (Math.floor((date2.getTime() - date1.getTime()) / 86400000) % 30.437);
+		var secondsWithoutYuriel = Math.floor(Math.floor((date2.getTime() - date1.getTime()) / 1000) % 60);
+		var minutesWithoutYuriel = Math.floor(Math.floor((date2.getTime() - date1.getTime()) / 60000) % 60);
+		var hoursWithoutYuriel = Math.floor(Math.floor((date2.getTime() - date1.getTime()) / 3600000) % 24);
+		var daysWithoutYuriel = Math.floor(Math.floor((date2.getTime() - date1.getTime()) / 86400000) % 30.437);
 		var monthsWithoutYuriel = Math.floor(((date2.getTime() - date1.getTime()) / 2628000000) % 12);
 		var yearsWithoutYuriel = Math.floor((date2.getTime() - date1.getTime()) / 31540000000);
 
